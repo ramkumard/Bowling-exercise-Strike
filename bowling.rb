@@ -68,6 +68,8 @@ end
 
 class Game
   class << self
+  	# Prints user score for the game 
+  	# No of pins knocked down
     def play()
     	board = Bowling.new()
     	puts "Please provide no of bowl"
@@ -83,6 +85,7 @@ class Game
   end
 end
 
+# Get user inputs
 while true
   puts "Do you want to play again? (y/n)"
   if ["no","n"].include? (gets.chomp.downcase)
